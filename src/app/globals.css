@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+/* Identidade visual MotorTech: cinza-escuro, preto, branco e laranja.
+   Ajustar o tom exato do laranja quando a logo oficial for fornecida. */
+@theme {
+  --color-mt-black: #0b0b0c;
+  --color-mt-graphite: #16171a;
+  --color-mt-steel: #24262b;
+  --color-mt-line: #34373e;
+  --color-mt-muted: #9a9ea8;
+  --color-mt-white: #f5f6f7;
+  --color-mt-orange: #ff6a13;
+  --color-mt-orange-dark: #d9550a;
+
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background: var(--color-mt-black);
+  color: var(--color-mt-white);
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-mt-orange);
+  outline-offset: 2px;
+}
